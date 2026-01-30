@@ -1,0 +1,42 @@
+# Ignore all markdown files except README and EXAMPLES
+*.md
+!README.md
+!EXAMPLES.md
+
+# Compiled object files
+*.o
+*.obj
+*.exe
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.out
+*.app
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# Build directories
+build/
+dist/
+bin/
+obj/
+
+# Generated documentation
+doc/
+doxygen_output/
+html/
+
+# OS files
+.DS_Store
+Thumbs.db

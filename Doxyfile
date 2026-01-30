@@ -1,0 +1,101 @@
+# Doxyfile for CLI Library Documentation
+# Generated configuration for Doxygen documentation generation
+
+PROJECT_NAME           = "CLI Library"
+PROJECT_NUMBER         = 1.1
+PROJECT_BRIEF          = "Lightweight Command Line Interface for Embedded Systems"
+PROJECT_LOGO           = 
+
+# Author information
+AUTHOR_BRIEF           = "Marcelo Haberman"
+AUTHOR_EMAIL           = "marcelo.haberman@gmail.com" 
+
+OUTPUT_DIRECTORY       = ./doc
+CREATE_SUBDIRS         = NO
+
+# Documentation style
+FULL_PATH_NAMES        = NO
+STRIP_FROM_PATH        = 
+STRIP_FROM_INC_PATH    = 
+
+TAB_SIZE               = 4
+OPTIMIZE_OUTPUT_FOR_C  = YES
+EXTENSION_MAPPING      = no_extension=C
+
+# Build settings
+EXTRACT_ALL            = NO
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = NO
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+
+# Input files
+INPUT                  = ./command.h \
+                         ./command.c \
+                         ./command_cfg.h \
+                         ./command_user.h \
+                         ./command_user.c \
+                         ./README.md
+
+INPUT_ENCODING         = UTF-8
+FILE_PATTERNS          = *.c *.h *.md
+RECURSIVE              = NO
+
+# Output formats
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+GENERATE_LATEX         = NO
+GENERATE_MAN           = NO
+GENERATE_RTF           = NO
+
+# HTML customization
+HTML_HEADER            = 
+HTML_FOOTER            = 
+HTML_STYLESHEET        = 
+MATHJAX_FORMAT         = HTML-CSS
+
+# Search support
+SEARCHENGINE           = YES
+SERVER_BASED_SEARCH    = NO
+
+# Diagram generation
+HAVE_DOT               = NO
+CALL_GRAPH             = NO
+CALLER_GRAPH           = NO
+
+# Source browsing
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+
+# Warnings
+QUIET                  = NO
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = NO
+WARN_IF_DOC_BEFORE_BRIEF = NO
+
+# Sorting
+SORT_MEMBERS_CTORS_1ST = NO
+SORT_GROUP_NAMES       = NO
+SORT_BY_SCOPE_NAME     = NO
+
+# Preprocessing
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = NO
+EXPAND_ONLY_PREDEF     = NO
+
+# Comment handling
+MARKDOWN_SUPPORT       = YES
+AUTOLINK_SUPPORT       = YES
+TOC_INCLUDE_HEADINGS   = 5
+
+# Aliases for common documentation patterns
+ALIASES                += "note=\par Note:\n" \
+                          "warning=\par Warning:\n" \
+                          "bug=\par Bug:\n" \
+                          "see=\sa" \
+                          "param_in=\param[in]" \
+                          "param_out=\param[out]" \
+                          "param_inout=\param[in,out]" \
+                          "returns=\return"
