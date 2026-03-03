@@ -47,8 +47,8 @@
 
 #include <stdio.h>
 
-/** \brief Output function macro. Modify for different platforms (UART, file, etc.) */
-#define CMD_Print(s)       puts(s)
+extern void CDC_PrintStr(const char* s);
+#define CMD_Print(s)       CDC_PrintStr(s)
 
 /** @} */
 
